@@ -76,6 +76,14 @@ export const ledger = {
 
 export const SPONSOR = "Tomorrow University";
 
+// The live site's address, used for social share previews. Set NEXT_PUBLIC_SITE_URL when
+// deploying to your own domain; on Vercel the production URL is picked up automatically.
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "http://localhost:3000");
+
 // The team section. Photos live in public/team/ (square, ~480px). Leave photo empty to
 // show initials; leave role empty to hide it.
 export const team = [

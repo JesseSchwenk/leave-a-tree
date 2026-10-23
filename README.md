@@ -38,6 +38,7 @@ Choosing a tier opens an order form (name on tag, email, dedication, gift). It d
 ## Deploy (free)
 
 - **Vercel:** import the repo, no settings needed.
+- Elsewhere (or on a custom domain), set the env var `NEXT_PUBLIC_SITE_URL=https://your-domain` before building, so link previews point at the right share image.
 - **Netlify:** build command `npm run build`, publish directory `out`.
 - **GitHub Pages:** run `npm run build` and publish the `out` folder. If the site lives at `user.github.io/repo`, set `basePath: "/repo"` in `next.config.ts`.
 
@@ -49,6 +50,7 @@ Update the numbers in `ledger` (`lib/site.ts`) as trees go in and orders come in
 
 - `lib/site.ts`: payment links, prices, ledger numbers, sponsor name, team
 - `public/team/`: team photos (square, ~480px)
+- `app/icon.svg`, `app/apple-icon.png`, `app/opengraph-image.png`: favicon, home-screen icon, link preview image
 - `components/Landing.tsx`: all page sections
 - `components/Tag.tsx`: the plain / wood / metal tag preview
 - `app/thanks/page.tsx`: confirmation page after payment
