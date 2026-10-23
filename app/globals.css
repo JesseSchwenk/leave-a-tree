@@ -1650,8 +1650,46 @@ a {
   .steps {
     padding: 80px 0 64px;
   }
+  /* A compact timeline: icon on the left, joined by a thin line, text beside it. */
   .steps__list {
     grid-template-columns: 1fr;
+    gap: 28px;
+    margin-top: 36px;
+  }
+  .step {
+    position: relative;
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    column-gap: 18px;
+    align-content: start;
+  }
+  .step:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: 72px;
+    bottom: -22px;
+    left: 41px;
+    width: 2px;
+    background: var(--line);
+  }
+  /* The art is wider than its disc; let it overflow the column so the disc fills it. */
+  .step .art {
+    grid-row: 1 / span 3;
+    width: 116px;
+    max-width: none;
+    margin: -6px -16px 0;
+  }
+  .step__num {
+    margin-top: 4px;
+    font-size: 1.375rem;
+  }
+  .step__title {
+    margin-top: 4px;
+    font-size: 1.125rem;
+  }
+  .step__text {
+    margin-top: 4px;
+    font-size: 0.9375rem;
   }
   .updates {
     padding: 80px 0;
