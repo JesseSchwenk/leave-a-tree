@@ -89,6 +89,5 @@ export const SITE_URL =
 export const team = [
   { name: "Jesse Schwenk", role: "", photo: "/team/jesse.webp" },
   { name: "Povilas Kepalavicius", role: "", photo: "/team/povilas.webp" },
-  { name: "Cristhian Zelaya", role: "", photo: "/team/cristhian.webp" },
   { name: "Isabella Caminos", role: "", photo: "/team/isabella.webp" },
 ];

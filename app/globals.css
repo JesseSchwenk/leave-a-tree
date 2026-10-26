@@ -1200,9 +1200,10 @@ a {
 
 .team__row {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 32px;
-  margin-top: 48px;
+  max-width: 75%;
+  margin: 48px auto 0;
   padding: 0;
   list-style: none;
 }
@@ -1609,6 +1610,7 @@ a {
   .team__row {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 28px 20px;
+    max-width: none;
   }
   .header__nav {
     display: none;
