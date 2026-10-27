@@ -68,10 +68,10 @@ export const tierById = (id: string | null) => tiers.find((t) => t.id === id);
 
 // Round 1 numbers for the ledger section. Update these by hand as orders come in.
 export const ledger = {
-  treesPlanted: 0,
+  treesPlanted: 1,
   eurRaised: 0,
   subscribers: 0,
-  seedTrees: 0, // saplings paid for with the seed money
+  seedTrees: 1, // saplings paid for with the seed money
 };
 
 export const SPONSOR = "Tomorrow University";
